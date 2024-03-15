@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surgical Items Store</title>
+    <style>
+        /* CSS styles for Surgical Items Store */
+        /* Reset styles */
+        html, body, h1, h2, p, ul, li, form, input, textarea, button {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .item {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Surgical Store </h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to Surgical Items Store</h2>
+            <p>We provide high-quality surgical instruments and equipment to meet your medical needs Ex:Drugs and Druggists' Sundries Merchant Wholesalers ,  Professional and Commercial Equipment and Supplies Merchant Wholesalers ,  Merchant Wholesalers, Nondurable Goods ,  Wholesale Trade ,  Drugs, proprietaries, and sundries ,  ,  Pharmaceuticals ,  Medical and hospital equipment Instruments, surgical and medical</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="item" onclick="showDetails('Scalpel Set', 'A set of surgical scalpels for precise incisions.')">
+                <h3>Scalpel Set</h3>
+                <p>A set of surgical scalpels for precise incisions.</p>
+            </div>
+            <div class="item" onclick="showDetails('Forceps', 'Precision forceps for grasping and holding tissues.')">
+                <h3>Forceps</h3>
+                <p>Precision forceps for grasping and holding tissues.</p>
+            </div>
+            <div class="item" onclick="showDetails('Surgical Scissors', 'Sharp surgical scissors for cutting tissues and sutures.')">
+                <h3>Surgical Scissors</h3>
+                <p>Sharp surgical scissors for cutting tissues and sutures.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are committed to providing top-quality surgical instruments to healthcare professionals worldwide.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Surgical Items Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showDetails(productName, description) {
+            alert(productName + ": " + description);
+        }
+    </script>
+</body>
+</html>
